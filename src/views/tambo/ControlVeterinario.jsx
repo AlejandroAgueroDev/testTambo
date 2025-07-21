@@ -1,0 +1,42 @@
+import ContenedorGeneral from "../../common/ContenedorGeneral";
+import Titulo from "../../common/Titulo";
+import { Link } from "react-router-dom";
+import BarraSeparadora from "../../common/BarraSeparadora";
+import CargarComprolVeterinario from "./components/controlVeterinario/CargarControlVeterinario";
+import UltimosControles from "./components/controlVeterinario/UltimosControles";
+import { useParams } from "react-router-dom";
+
+const ControlVeterinario = () => {
+    const { origen } = useParams();
+
+    return (
+        <ContenedorGeneral navText={origen.toUpperCase()}>
+            <div className="w-screen md:w-full hidden sm:flex justify-between pl-14 md:pl-0 pr-4 md:pr-0">
+                <Titulo text={`${origen.toUpperCase()} | CONTROL VETERINARIO`} />
+                <Link to={`/${origen}`} className="boton_rojo">
+                    VOLVER
+                </Link>
+            </div>
+            <div className="w-screen md:w-full sm:hidden flex justify-between pl-14 md:pl-0 pr-4 md:pr-0">
+                <Titulo text="CONTROL VETERINARIO" />
+                <Link to={`/${origen}`} className="boton_rojo">
+                    VOLVER
+                </Link>
+            </div>
+            <div className="w-full h-full flex flex-col space-y-3 md:space-y-0 md:flex-row justify-between scrollbar overflow-auto">
+                <CargarComprolVeterinario />
+
+                <div className="hidden sm:block">
+                    <BarraSeparadora orientacion="vertical" />
+                </div>
+                <div className="sm:hidden">
+                    <BarraSeparadora orientacion="horizontal" />
+                </div>
+
+                <UltimosControles origen={origen} />
+            </div>
+        </ContenedorGeneral>
+    );
+};
+
+export default ControlVeterinario;

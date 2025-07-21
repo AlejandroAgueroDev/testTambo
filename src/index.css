@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.boton_verde {
+  @apply bg-button-green hover:bg-button-green_hover text-white-bg2 py-2 px-5 text-lg text-center;
+}
+
+.boton_verde_selected {
+  @apply bg-button-green_hover text-white-bg2 py-2 px-5 text-lg cursor-default;
+}
+
+.boton_rojo {
+  @apply bg-button-red hover:bg-button-red_hover text-white-bg2 py-2 px-5 text-lg text-center;
+}
+
+.boton_rojo_deshabilitado {
+  @apply bg-button-red_hover text-white-bg2 py-2 px-5 text-lg cursor-not-allowed;
+}
+
+.boton_negro {
+  @apply bg-black-comun hover:bg-black-hover text-white-bg2 py-2 px-5 text-lg;
+}
+
+.boton_amarillo {
+  @apply bg-button-yellow hover:bg-button-yellow_hover text-white-bg2 py-2 px-5 text-lg;
+}
+
+.boton_cian {
+  @apply bg-teal-400 hover:bg-teal-300 text-white-bg2 py-2 px-5 text-lg;
+}
+
+.sombra {
+  @apply shadow-[#000] shadow-md;
+}
+.sombra2 {
+  @apply shadow-[#A39C9B] shadow-md;
+}
+
+.links {
+  @apply bg-black-comun px-2 py-7 text-xl shadow-[#A39C9B] shadow-md w-[268px] text-center font-NS font-semibold hover:bg-black-hover cursor-pointer text-white-bg;
+}
+
+.linksCC {
+  @apply bg-black-comun px-9 py-4 flex justify-center items-center text-xl shadow-[#A39C9B] shadow-md w-[268px] text-center font-NS font-semibold hover:bg-[#3d3d3d] cursor-pointer text-white-bg;
+}
+
+.linksBLOCK {
+  @apply bg-[#5e5e5e] px-9 py-4 flex justify-center items-center text-xl shadow-[#A39C9B] shadow-md w-[268px] text-center font-NS font-semibold text-white-bg;
+}
+
+.labelInput {
+  @apply text-xl font-semibold text-white-bg3;
+}
+
+.input {
+  @apply bg-white-bg2 text-black-comun py-2 px-2 text-xl w-full sm:w-auto sm:grow;
+}
+
+.containerInput {
+  @apply flex flex-col sm:flex-row sm:space-x-3 items-start sm:items-center w-full;
+}
+
+/* 🎨 Estilos personalizados para la barra de scroll */
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #c6c5c500;
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #5e5e5e;
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #717070;
+}
+
+/* Personaliza el fondo y el texto del tooltip */
+.tippy-box[data-theme~="custom"] {
+  background-color: #ff5e5e;
+  color: white;
+}
+
+/* Personaliza la flecha del tooltip*/
+.tippy-box[data-theme~="custom"] > .tippy-arrow {
+  color: #ff5e5e;
+}
+
+.tippy-box[data-theme~="custom_2"] {
+  background-color: #00a159;
+  color: white;
+  font: 15px "Gabarito";
+}
+
+.tippy-box[data-theme~="custom_2"] > .tippy-arrow {
+  color: #00a159;
+}
+
+.tippy-box[data-theme~="custom_3"] {
+  background-color: #363636;
+  color: white;
+  font: 15px "Gabarito";
+}
+
+.tippy-box[data-theme~="custom_3"] > .tippy-arrow {
+  color: #363636;
+}
+
+.tippy-box[data-theme~="custom_4"] {
+  background-color: #4db6ac;
+  color: white;
+  font: 15px "Gabarito";
+}
+
+.tippy-box[data-theme~="custom_4"] > .tippy-arrow {
+  color: #4db6ac;
+}

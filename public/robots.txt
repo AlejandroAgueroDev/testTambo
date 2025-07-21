@@ -1,0 +1,6 @@
+# Permitir que todos los bots rastreen todo el sitio
+User-agent: *
+Disallow:
+
+# Sitemap opcional (si tenés uno)
+# Sitemap: https://tusitio.com/sitemap.xml
