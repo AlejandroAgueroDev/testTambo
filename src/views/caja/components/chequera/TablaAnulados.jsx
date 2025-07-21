@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { formatearFecha } from "../../../../common/FornatearFecha";
+import { formatearFecha } from "../../../../common/fornatearFecha";
 import Titulo from "../../../../common/Titulo";
 
 const TablaAnulados = ({ cheques, onClose }) => {

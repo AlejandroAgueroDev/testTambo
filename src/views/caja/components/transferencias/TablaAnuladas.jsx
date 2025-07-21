@@ -1,5 +1,5 @@
 import Titulo from "../../../../common/Titulo";
-import { formatearFecha } from "../../../../common/FornatearFecha";
+import { formatearFecha } from "../../../../common/fornatearFecha";
 
 const TablaAnulada = ({ setCloseModal, anuladas, cuentas }) => {
   return (

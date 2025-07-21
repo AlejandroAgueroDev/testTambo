@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 import NuevaTransferencia from "./NuevaTransferencia";
 import Modal from "../../../../common/Modal";
 import EditarCuenta from "./EditarCuenta";
-import { formatearFecha } from "../../../../common/FornatearFecha";
+import { formatearFecha } from "../../../../common/fornatearFecha";
 import { MdEdit, MdDelete } from "react-icons/md";
 
 const TablaTransferencias = ({

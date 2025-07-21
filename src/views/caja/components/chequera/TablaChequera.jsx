@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa6";
 import Swal from "sweetalert2";
 import axios from "axios";
 import { url } from "../../../../common/URL_SERVER";
-import { formatearFecha } from "../../../../common/FornatearFecha";
+import { formatearFecha } from "../../../../common/fornatearFecha";
 
 const TablaChequesEmitidos = ({ cheques, fetchData }) => {
   const handleAnular = async (id) => {
